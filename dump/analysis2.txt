@@ -1,0 +1,315 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 47.82      0.10     0.10 49995000     0.00     0.00  CRTPInterface<CRTPImplementation>::tick(unsigned long)
+ 14.35      0.13     0.03 49995000     0.00     0.00  CRTPInterface<CRTPImplementation>::impl()
+ 14.35      0.16     0.03 49995000     0.00     0.00  CRTPImplementation::tick(unsigned long)
+ 14.35      0.19     0.03        1    30.13   190.80  void run_crtp<CRTPImplementation>(CRTPInterface<CRTPImplementation>*)
+  4.78      0.20     0.01        1    10.04    10.04  CRTPImplementation::CRTPImplementation()
+  4.78      0.21     0.01        1    10.04    10.04  std::default_delete<CRTPImplementation>::operator()(CRTPImplementation*) const
+  0.00      0.21     0.00        4     0.00     0.00  std::default_delete<CRTPImplementation>&& std::forward<std::default_delete<CRTPImplementation> >(std::remove_reference<std::default_delete<CRTPImplementation> >::type&)
+  0.00      0.21     0.00        3     0.00     0.00  CRTPImplementation*& std::forward<CRTPImplementation*&>(std::remove_reference<CRTPImplementation*&>::type&)
+  0.00      0.21     0.00        1     0.00     0.00  CRTPInterface<CRTPImplementation>::CRTPInterface()
+  0.00      0.21     0.00        1     0.00     0.00  std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get() const
+  0.00      0.21     0.00        1     0.00     0.00  std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false> const&)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false>&)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Head_base<0ul, CRTPImplementation*, false>::_Head_base<CRTPImplementation*&>(CRTPImplementation*&)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_M_head(std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>&)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_Head_base<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&)
+  0.00      0.21     0.00        1     0.00     0.00  std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get_deleter()
+  0.00      0.21     0.00        1     0.00     0.00  std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::unique_ptr(CRTPImplementation*)
+  0.00      0.21     0.00        1     0.00    10.04  std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::~unique_ptr()
+  0.00      0.21     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >&)
+  0.00      0.21     0.00        1     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_Tuple_impl<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&)
+  0.00      0.21     0.00        1     0.00     0.00  std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >::tuple<CRTPImplementation*&, std::default_delete<CRTPImplementation>, void>(CRTPImplementation*&, std::default_delete<CRTPImplementation>&&)
+  0.00      0.21     0.00        1     0.00    10.04  _ZSt11make_uniqueI18CRTPImplementationIEENSt9_MakeUniqIT_E15__single_objectEDpOT0_
+  0.00      0.21     0.00        1     0.00     0.00  CRTPImplementation* const& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&)
+  0.00      0.21     0.00        1     0.00     0.00  CRTPImplementation*& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&)
+  0.00      0.21     0.00        1     0.00     0.00  std::default_delete<CRTPImplementation>& std::__get_helper<1ul, std::default_delete<CRTPImplementation>>(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation>>&)
+  0.00      0.21     0.00        1     0.00     0.00  std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&)
+  0.00      0.21     0.00        1     0.00     0.00  std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type const& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > const&)
+  0.00      0.21     0.00        1     0.00     0.00  std::tuple_element<1ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<1ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 4.74% of 0.21 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.21                 main [1]
+                0.03    0.16       1/1           void run_crtp<CRTPImplementation>(CRTPInterface<CRTPImplementation>*) [2]
+                0.00    0.01       1/1           _ZSt11make_uniqueI18CRTPImplementationIEENSt9_MakeUniqIT_E15__single_objectEDpOT0_ [9]
+                0.00    0.01       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::~unique_ptr() [8]
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get() const [19]
+-----------------------------------------------
+                0.03    0.16       1/1           main [1]
+[2]     90.5    0.03    0.16       1         void run_crtp<CRTPImplementation>(CRTPInterface<CRTPImplementation>*) [2]
+                0.10    0.06 49995000/49995000     CRTPInterface<CRTPImplementation>::tick(unsigned long) [3]
+-----------------------------------------------
+                0.10    0.06 49995000/49995000     void run_crtp<CRTPImplementation>(CRTPInterface<CRTPImplementation>*) [2]
+[3]     76.2    0.10    0.06 49995000         CRTPInterface<CRTPImplementation>::tick(unsigned long) [3]
+                0.03    0.00 49995000/49995000     CRTPInterface<CRTPImplementation>::impl() [4]
+                0.03    0.00 49995000/49995000     CRTPImplementation::tick(unsigned long) [5]
+-----------------------------------------------
+                0.03    0.00 49995000/49995000     CRTPInterface<CRTPImplementation>::tick(unsigned long) [3]
+[4]     14.3    0.03    0.00 49995000         CRTPInterface<CRTPImplementation>::impl() [4]
+-----------------------------------------------
+                0.03    0.00 49995000/49995000     CRTPInterface<CRTPImplementation>::tick(unsigned long) [3]
+[5]     14.3    0.03    0.00 49995000         CRTPImplementation::tick(unsigned long) [5]
+-----------------------------------------------
+                0.01    0.00       1/1           _ZSt11make_uniqueI18CRTPImplementationIEENSt9_MakeUniqIT_E15__single_objectEDpOT0_ [9]
+[6]      4.8    0.01    0.00       1         CRTPImplementation::CRTPImplementation() [6]
+                0.00    0.00       1/1           CRTPInterface<CRTPImplementation>::CRTPInterface() [18]
+-----------------------------------------------
+                0.01    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::~unique_ptr() [8]
+[7]      4.8    0.01    0.00       1         std::default_delete<CRTPImplementation>::operator()(CRTPImplementation*) const [7]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[8]      4.8    0.00    0.01       1         std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::~unique_ptr() [8]
+                0.01    0.00       1/1           std::default_delete<CRTPImplementation>::operator()(CRTPImplementation*) const [7]
+                0.00    0.00       1/1           std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [36]
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get_deleter() [25]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[9]      4.8    0.00    0.01       1         _ZSt11make_uniqueI18CRTPImplementationIEENSt9_MakeUniqIT_E15__single_objectEDpOT0_ [9]
+                0.01    0.00       1/1           CRTPImplementation::CRTPImplementation() [6]
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::unique_ptr(CRTPImplementation*) [26]
+-----------------------------------------------
+                0.00    0.00       1/4           std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_Head_base<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [24]
+                0.00    0.00       1/4           std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_Tuple_impl<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [31]
+                0.00    0.00       1/4           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...) [28]
+                0.00    0.00       1/4           std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >::tuple<CRTPImplementation*&, std::default_delete<CRTPImplementation>, void>(CRTPImplementation*&, std::default_delete<CRTPImplementation>&&) [32]
+[16]     0.0    0.00    0.00       4         std::default_delete<CRTPImplementation>&& std::forward<std::default_delete<CRTPImplementation> >(std::remove_reference<std::default_delete<CRTPImplementation> >::type&) [16]
+-----------------------------------------------
+                0.00    0.00       1/3           std::_Head_base<0ul, CRTPImplementation*, false>::_Head_base<CRTPImplementation*&>(CRTPImplementation*&) [22]
+                0.00    0.00       1/3           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...) [28]
+                0.00    0.00       1/3           std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >::tuple<CRTPImplementation*&, std::default_delete<CRTPImplementation>, void>(CRTPImplementation*&, std::default_delete<CRTPImplementation>&&) [32]
+[17]     0.0    0.00    0.00       3         CRTPImplementation*& std::forward<CRTPImplementation*&>(std::remove_reference<CRTPImplementation*&>::type&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1           CRTPImplementation::CRTPImplementation() [6]
+[18]     0.0    0.00    0.00       1         CRTPInterface<CRTPImplementation>::CRTPInterface() [18]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[19]     0.0    0.00    0.00       1         std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get() const [19]
+                0.00    0.00       1/1           std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type const& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [27]
+[20]     0.0    0.00    0.00       1         std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false> const&) [20]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [29]
+[21]     0.0    0.00    0.00       1         std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false>&) [21]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...) [28]
+[22]     0.0    0.00    0.00       1         std::_Head_base<0ul, CRTPImplementation*, false>::_Head_base<CRTPImplementation*&>(CRTPImplementation*&) [22]
+                0.00    0.00       1/3           CRTPImplementation*& std::forward<CRTPImplementation*&>(std::remove_reference<CRTPImplementation*&>::type&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >&) [30]
+[23]     0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_M_head(std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>&) [23]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_Tuple_impl<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [31]
+[24]     0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_Head_base<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [24]
+                0.00    0.00       1/4           std::default_delete<CRTPImplementation>&& std::forward<std::default_delete<CRTPImplementation> >(std::remove_reference<std::default_delete<CRTPImplementation> >::type&) [16]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::~unique_ptr() [8]
+[25]     0.0    0.00    0.00       1         std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get_deleter() [25]
+                0.00    0.00       1/1           std::tuple_element<1ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<1ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [38]
+-----------------------------------------------
+                0.00    0.00       1/1           _ZSt11make_uniqueI18CRTPImplementationIEENSt9_MakeUniqIT_E15__single_objectEDpOT0_ [9]
+[26]     0.0    0.00    0.00       1         std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::unique_ptr(CRTPImplementation*) [26]
+                0.00    0.00       1/1           std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >::tuple<CRTPImplementation*&, std::default_delete<CRTPImplementation>, void>(CRTPImplementation*&, std::default_delete<CRTPImplementation>&&) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           CRTPImplementation* const& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [33]
+[27]     0.0    0.00    0.00       1         std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [27]
+                0.00    0.00       1/1           std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false> const&) [20]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >::tuple<CRTPImplementation*&, std::default_delete<CRTPImplementation>, void>(CRTPImplementation*&, std::default_delete<CRTPImplementation>&&) [32]
+[28]     0.0    0.00    0.00       1         std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...) [28]
+                0.00    0.00       1/4           std::default_delete<CRTPImplementation>&& std::forward<std::default_delete<CRTPImplementation> >(std::remove_reference<std::default_delete<CRTPImplementation> >::type&) [16]
+                0.00    0.00       1/3           CRTPImplementation*& std::forward<CRTPImplementation*&>(std::remove_reference<CRTPImplementation*&>::type&) [17]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_Tuple_impl<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [31]
+                0.00    0.00       1/1           std::_Head_base<0ul, CRTPImplementation*, false>::_Head_base<CRTPImplementation*&>(CRTPImplementation*&) [22]
+-----------------------------------------------
+                0.00    0.00       1/1           CRTPImplementation*& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [34]
+[29]     0.0    0.00    0.00       1         std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [29]
+                0.00    0.00       1/1           std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false>&) [21]
+-----------------------------------------------
+                0.00    0.00       1/1           std::default_delete<CRTPImplementation>& std::__get_helper<1ul, std::default_delete<CRTPImplementation>>(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation>>&) [35]
+[30]     0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >&) [30]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_M_head(std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>&) [23]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...) [28]
+[31]     0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_Tuple_impl<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [31]
+                0.00    0.00       1/4           std::default_delete<CRTPImplementation>&& std::forward<std::default_delete<CRTPImplementation> >(std::remove_reference<std::default_delete<CRTPImplementation> >::type&) [16]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_Head_base<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [24]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::unique_ptr(CRTPImplementation*) [26]
+[32]     0.0    0.00    0.00       1         std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >::tuple<CRTPImplementation*&, std::default_delete<CRTPImplementation>, void>(CRTPImplementation*&, std::default_delete<CRTPImplementation>&&) [32]
+                0.00    0.00       1/4           std::default_delete<CRTPImplementation>&& std::forward<std::default_delete<CRTPImplementation> >(std::remove_reference<std::default_delete<CRTPImplementation> >::type&) [16]
+                0.00    0.00       1/3           CRTPImplementation*& std::forward<CRTPImplementation*&>(std::remove_reference<CRTPImplementation*&>::type&) [17]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type const& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [37]
+[33]     0.0    0.00    0.00       1         CRTPImplementation* const& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [33]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [27]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [36]
+[34]     0.0    0.00    0.00       1         CRTPImplementation*& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [34]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple_element<1ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<1ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [38]
+[35]     0.0    0.00    0.00       1         std::default_delete<CRTPImplementation>& std::__get_helper<1ul, std::default_delete<CRTPImplementation>>(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation>>&) [35]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >&) [30]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::~unique_ptr() [8]
+[36]     0.0    0.00    0.00       1         std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [36]
+                0.00    0.00       1/1           CRTPImplementation*& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [34]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get() const [19]
+[37]     0.0    0.00    0.00       1         std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type const& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [37]
+                0.00    0.00       1/1           CRTPImplementation* const& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get_deleter() [25]
+[38]     0.0    0.00    0.00       1         std::tuple_element<1ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<1ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [38]
+                0.00    0.00       1/1           std::default_delete<CRTPImplementation>& std::__get_helper<1ul, std::default_delete<CRTPImplementation>>(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation>>&) [35]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [2] void run_crtp<CRTPImplementation>(CRTPInterface<CRTPImplementation>*) [23] std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_M_head(std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>&) [9] _ZSt11make_uniqueI18CRTPImplementationIEENSt9_MakeUniqIT_E15__single_objectEDpOT0_
+   [4] CRTPInterface<CRTPImplementation>::impl() [24] std::_Head_base<1ul, std::default_delete<CRTPImplementation>, true>::_Head_base<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&) [33] CRTPImplementation* const& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&)
+   [3] CRTPInterface<CRTPImplementation>::tick(unsigned long) [25] std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get_deleter() [34] CRTPImplementation*& std::__get_helper<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&)
+  [18] CRTPInterface<CRTPImplementation>::CRTPInterface() [26] std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::unique_ptr(CRTPImplementation*) [35] std::default_delete<CRTPImplementation>& std::__get_helper<1ul, std::default_delete<CRTPImplementation>>(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation>>&)
+   [5] CRTPImplementation::tick(unsigned long) [8] std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::~unique_ptr() [36] std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&)
+   [6] CRTPImplementation::CRTPImplementation() [27] std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> > const&) [37] std::tuple_element<0ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type const& std::get<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > const&)
+  [19] std::unique_ptr<CRTPImplementation, std::default_delete<CRTPImplementation> >::get() const [28] std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_Tuple_impl<CRTPImplementation*<std::default_delete<CRTPImplementation> >&, void>(CRTPImplementation*<std::default_delete<CRTPImplementation> >&, (void&&)...) [38] std::tuple_element<1ul, std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> > >::type& std::get<1ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >(std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >&)
+   [7] std::default_delete<CRTPImplementation>::operator()(CRTPImplementation*) const [29] std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<0ul, CRTPImplementation*, std::default_delete<CRTPImplementation> >&) [17] CRTPImplementation*& std::forward<CRTPImplementation*&>(std::remove_reference<CRTPImplementation*&>::type&)
+  [20] std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false> const&) [30] std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >&) [16] std::default_delete<CRTPImplementation>&& std::forward<std::default_delete<CRTPImplementation> >(std::remove_reference<std::default_delete<CRTPImplementation> >::type&)
+  [21] std::_Head_base<0ul, CRTPImplementation*, false>::_M_head(std::_Head_base<0ul, CRTPImplementation*, false>&) [31] std::_Tuple_impl<1ul, std::default_delete<CRTPImplementation> >::_Tuple_impl<std::default_delete<CRTPImplementation> >(std::default_delete<CRTPImplementation>&&)
+  [22] std::_Head_base<0ul, CRTPImplementation*, false>::_Head_base<CRTPImplementation*&>(CRTPImplementation*&) [32] std::tuple<CRTPImplementation*, std::default_delete<CRTPImplementation> >::tuple<CRTPImplementation*&, std::default_delete<CRTPImplementation>, void>(CRTPImplementation*&, std::default_delete<CRTPImplementation>&&)
